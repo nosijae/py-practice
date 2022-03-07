@@ -1,8 +1,14 @@
 N = int(input())
+rstList = []
 
 for i in range(N):
     num, myStr = input().split()
+    rstStr = ''
     for j in myStr:
-        print(j * int(num), end='')
+        rstStr += j * int(num)
+        # print(j * int(num), end='')
+    rstList.append(rstStr)
 
 
+for i in range(N):
+    print(rstList[i])
